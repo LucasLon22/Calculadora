@@ -1,4 +1,4 @@
-def sumar(variable1 , variable2):  #cuando no enviemos ningun valor para variable2 nos va a dar de valor por defecto el 20
+def sumar(variable1 , variable2):  
      print (variable1 + variable2)
      
 def resta(variable1, variable2):
