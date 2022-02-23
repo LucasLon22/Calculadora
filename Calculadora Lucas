@@ -1,0 +1,52 @@
+def sumar(variable1 , variable2):  #cuando no enviemos ningun valor para variable2 nos va a dar de valor por defecto el 20
+     print (variable1 + variable2)
+     
+def resta(variable1, variable2):
+     print (variable1 - variable2)
+
+def multiplicacion (variable1, variable2):
+     print(variable1 * variable2)
+
+def division (variable1, variable2):
+     print(variable1 / variable2)
+
+print("Bienvenido a la calculadora de Lucas")
+print("Las operaciones disponibles son Suma y Resta, por favor escoja una de ellas: ")
+
+while True:
+     
+     print("1- Suma")
+     print("2- Resta")
+     print("3- Multiplicación")
+     print("4- Division")
+     print("5- Salir")
+
+     opcion = input("Elija el numero de la operación que desea realizar: ") 
+
+     if opcion == "1":
+           numero1 = input("Ingrese el primer numero: ")
+           numero1 = int(numero1)
+           numero2 = input("Ingrese el segundo numero: ")
+           numero2 = int(numero2)
+           sumar_numeros = sumar(numero1, numero2)     
+     elif opcion == "2":
+           numero1 = input("Ingrese el primer numero: ")
+           numero1 = int(numero1)
+           numero2 = input("Ingrese el segundo numero: ")
+           numero2 = int(numero2)
+           restar_numeros = resta(numero1, numero2)  
+     elif opcion == "3":
+           numero1 = input("Ingrese el primer numero: ")
+           numero1 = int(numero1)
+           numero2 = input("Ingrese el segundo numero: ")
+           numero2 = int(numero2)
+           multiplicacion_numeros = multiplicacion(numero1, numero2) 
+     elif opcion == "4":
+           numero1 = input("Ingrese el primer numero: ")
+           numero1 = float(numero1)
+           numero2 = input("Ingrese el segundo numero: ")
+           numero2 = float(numero2)
+           division_numeros = division(numero1, numero2)
+     elif opcion == "5":
+          break
+     else: print("Elija una de las opciones por favor")
